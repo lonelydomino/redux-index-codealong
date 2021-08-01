@@ -34,8 +34,10 @@ class TodosContainer extends Component {
     );
   }
 };
-
-export default connect()(TodosContainer);
+mapStateToProps = () => {
+  debugger
+}
+export default connect(mapStateToProps)(TodosContainer);
 ```
 
 Now, we aren't worried about dispatching actions here, only getting state from
